@@ -3,6 +3,10 @@ const sumAll = function(lowNum, highNum) {
     if (lowNum > highNum) [lowNum, highNum] = [highNum, lowNum];
     let sumTotal = 0
 
+    // error checking
+    if (!Number.isInteger(min) || !Number.isInteger(max)) return "ERROR";
+    if (min < 0 || max < 0) return "ERROR";
+
     // add numbers using for loop increment
     for (i = lowNum; i < highNum + 1; i++) {
         sumTotal += i;
