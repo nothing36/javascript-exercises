@@ -4,8 +4,8 @@ const sumAll = function(lowNum, highNum) {
     let sumTotal = 0
 
     // error checking
-    if (!Number.isInteger(min) || !Number.isInteger(max)) return "ERROR";
-    if (min < 0 || max < 0) return "ERROR";
+    if (!Number.isInteger(lowNum) || !Number.isInteger(highNum)) return "ERROR";
+    if (lowNum < 0 || highNum < 0) return "ERROR";
 
     // add numbers using for loop increment
     for (i = lowNum; i < highNum + 1; i++) {
